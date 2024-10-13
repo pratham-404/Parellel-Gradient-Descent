@@ -1,0 +1,78 @@
+jshell --> java on command line
+
+Java code -> compiler(Javac) -> Byte code(.class file) -> JVM (main() method) -> -> OS -> HW
+
+
+javac hello.java --> java compiler 
+java hello --> runs *.class(bytecode) in JVM => WORA(Write Once Run Anywhere)
+
+JRE == JVM + Libraries
+JDK >>>>> JRE >>>>>> JVM         [WORA] -> To run a Java Program only JVM & JRE is Required. JDK is not compulsory.
+
+Datatypes
+int x = 10_00_000;
+float = 11.11f;
+char c = 'a; c++;
+
+Type Conversion (Casting)
+float f = 11.11f;
+int i = (int) f;
+
+Operators =>   + - * / %,    += -= *= /=,     pre & post(++ --),      
+          =>   > < >= <= == !=,    && || ! (Short-Circuit)
+
+Conditional Statements -> if, if-else, if-else-if-else, switch-case(break, default)
+                       -> flag = x % 2 == 0 ? "EVEN" : "ODD"; [Ternary Operator]
+
+Loops -> while, do-while, for, nested
+
+method
+
+Object oriented programming 
+Class -> Blueprint of Object
+   >>> Object -> properties(variables) & behaviour(methods)
+    
+method overloading
+
+JVM -> STACK(LIFO)(method calls are LIFO) + HEAP(Expandable)(storing object -> variables, method-definations)
+
+Array - int num[] = new int[5]; (0-indexed)
+Matrix - int num[][] = new int[3][4]; (3 rows, 4 columns)
+math.random() - > random no. less than 1.0
+
+int nums[][] = new int[3][4];
+1 1 1 1
+1 1 1 1
+1 1 1 1
+for (int a[]: nums)
+{
+    for(int b : a)
+    {
+        // for-each loop
+    }
+}
+
+jagged array: int nums[][] = new int[3][]; // only one dimension initialized - second dimension is initialized later.
+              int nums[0] = new int[3];
+              int nums[1] = new int[5];
+              int nums[2] = new int[4];
+1 1 1
+1 1 1 1 1
+1 1 1 1
+
+size of arraya =  nums.length;
+
+drawbacks of array 
+    fixed size - continuous allocation in HEAP
+    linear triversal - O(n)
+    different datatypes cannot be used 
+
+array of objects 
+Student cls[] = new Student[3]; 
+
+
+
+
+
+
+
